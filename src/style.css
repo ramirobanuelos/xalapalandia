@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Modak';
+    src: url('./Modak-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('./Quicksand-Variable.ttf');
+}
+
+@property --dark-teal {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #358757;
+}
+
+@property --mid-teal {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #75A75F;
+}
+
+@property --light-teal {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #B6C66C;
+}
+
+@property --yellow {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #FBE281;
+}
+
+@property --dark-yellow {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #C0AB4D;
+}
+
+@property --light-grey {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #FAFCF1;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--mid-teal);
+    color: var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-color: var(--dark-teal);
+    border-radius: 10vh;
+    position: absolute;
+    top: 5vh;
+    width: 80vw;
+    padding: 5vh;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Modak';
+    font-weight: lighter;
+    font-size: 200%;
+    outline-width: 10px;
+    margin: 3pt;
+}
+
+p {
+    margin: 3pt;
+
+}
+
+h1 {
+    color: var(--yellow);
+}
+
+h2 {
+    color: var(--light-teal);
+}
+
+h3 {
+    color: var(--light-grey);
+}
+
+span.bubble {
+    /*font-family: 'Modak';
+    font-weight: lighter;
+    font-size: 130%;*/
+    font-weight: bold;
+}
+
+.text-content {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.right {
+    text-align: right;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.button {
+    background-color: var(--light-teal);
+    color: var(--dark-teal);
+    border: none;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--yellow);
+}
+
+ul,
+ol {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+li {
+    list-style-type: square;
+}
