@@ -61,10 +61,6 @@ body {
 
 .wrapper {
     background-color: var(--dark-teal);
-    border-radius: 10vh;
-    position: absolute;
-    top: 5vh;
-    width: 80vw;
     padding: 5vh;
 }
 
@@ -75,7 +71,8 @@ h3 {
     font-weight: lighter;
     font-size: 200%;
     outline-width: 10px;
-    margin: 3pt;
+    margin-top: 6pt;
+    margin-bottom: 3pt;
 }
 
 p {
@@ -120,13 +117,16 @@ span.bubble {
 .button {
     background-color: var(--light-teal);
     color: var(--dark-teal);
-    border: none;
+    border-color: var(--yellow);
+    border-width: 6pt;
+    border-style: solid;
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 15px;
     font-weight: bold;
     transition: background-color 0.5s ease;
     cursor: pointer;
+    font-weight:bolder;
 }
 
 .button:hover {
@@ -143,4 +143,31 @@ ol {
 
 li {
     list-style-type: square;
+}
+
+/***/
+
+@media only screen and (min-width: 1000px) {
+    #logo {
+    width: 700px;
+    height: auto;
+}
+  .wrapper {
+    border-radius: 10vh;
+    position: absolute;
+    top: 5vh;
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .wrapper {
+    position: absolute;
+    top: 0;
+    width: auto;
+  }
+  #logo {
+    width: 70vw;
+    height: auto;
+}
 }
